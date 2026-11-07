@@ -1,0 +1,19 @@
+.output-full-height {
+  height: 100%;
+}
+
+.output-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.output-editor-area {
+  height: 100%;
+}
+
+.info-card {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 10px;
+}

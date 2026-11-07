@@ -1,0 +1,175 @@
+.history-page {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 20px 24px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #1e1e1e;
+  color: #f3f4f6;
+  padding: 14px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.history-item:hover {
+  background: #292929;
+}
+
+.history-item-left,
+.history-item-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.history-item-type {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.history-item-langs,
+.history-item-date {
+  color: #c4c4c4;
+  font-size: 13px;
+}
+
+.history-item-delete {
+  color: #f3f4f6;
+  background: transparent;
+  border: 1px solid #5a5a5a;
+  border-radius: 6px;
+  padding: 5px 9px;
+}
+
+.history-item-delete:hover {
+  background: #3a3a3a;
+}
+
+.detail-output-box {
+  margin-top: 20px;
+  padding: 16px;
+  background: #1e1e1e;
+  color: #f3f4f6;
+  border-radius: 10px;
+}
+
+.detail-lang-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #d1d5db;
+  font-size: 13px;
+}
+
+.detail-code-editor {
+  height: 360px;
+  overflow: hidden;
+  border: 1px solid #383838;
+  border-radius: 8px;
+}
+
+.detail-complexity-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.detail-complexity-card {
+  flex: 1;
+  padding: 12px;
+  background: #292929;
+  border-radius: 8px;
+}
+
+.detail-complexity-label {
+  margin-bottom: 6px;
+  color: #c4c4c4;
+  font-size: 13px;
+}
+
+.detail-complexity-value {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.detail-text {
+  margin-top: 12px;
+  color: #e5e7eb;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.history-empty {
+  padding: 24px;
+  color: #666666;
+  text-align: center;
+}
+
+.history-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.page-btn,
+.clear-history-btn {
+  padding: 8px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #333333;
+}
+
+.page-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-btn.active {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+.clear-history-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .history-page {
+    padding: 16px;
+  }
+
+  .history-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .history-item-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .detail-complexity-row {
+    flex-direction: column;
+  }
+
+  .detail-code-editor {
+    height: 280px;
+  }
+}
